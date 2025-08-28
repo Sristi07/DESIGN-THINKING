@@ -1,0 +1,10 @@
+<section id="feedback" class="container">
+  <h2>💬 Feedback</h2>
+  <form action="https://formspree.io/f/your-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
