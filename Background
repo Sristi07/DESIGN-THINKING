@@ -1,0 +1,28 @@
+<canvas id="bgCanvas"></canvas>
+<script>
+const canvas = document.getElementById("bgCanvas");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+function drawStars() {
+  ctx.fillStyle = "black";
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  for(let i=0;i<200;i++){
+    ctx.fillStyle = "cyan";
+    ctx.beginPath();
+    ctx.arc(Math.random()*canvas.width, Math.random()*canvas.height, 1, 0, 2*Math.PI);
+    ctx.fill();
+  }
+}
+setInterval(drawStars, 100);
+</script>
+
+<style>
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+</style>
