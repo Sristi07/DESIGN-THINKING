@@ -1,0 +1,17 @@
+<section id="gamification" class="container">
+  <h2>🏆 Your Achievements</h2>
+  <div class="badge">🔥 7-Day Streak</div>
+  <div class="badge">🌟 Hackathon Winner</div>
+  <div class="badge">💡 Idea Contributor</div>
+</section>
+
+<style>
+.badge {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 12px;
+  background: gold;
+  font-weight: bold;
+}
+</style>
