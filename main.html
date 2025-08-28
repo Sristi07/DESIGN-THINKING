@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DT Club - Futuristic Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">DT Club</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkToggle">🌙</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <section id="home" class="container">
+    <h1>Welcome to DT Club 🚀</h1>
+    <p>Smart, Sustainable, and Futuristic Energy Management</p>
+  </section>
+
+  <section class="container">
+    <h2>🎤 Voice Search</h2>
+    <input id="voiceSearch" type="text" placeholder="Speak or Type..." />
+    <button onclick="startVoice()">Start Voice Search</button>
+  </section>
+
+  <section id="events" class="container">
+    <h2>📅 Upcoming Events</h2>
+    <ul>
+      <li>Women Hackathon - Oct 15, 2025</li>
+      <li>AI Bootcamp - Nov 2, 2025</li>
+      <li>Tech Fest - Dec 20, 2025</li>
+    </ul>
+  </section>
+
+  <section id="gamification" class="container">
+    <h2>🏆 Your Achievements</h2>
+    <div class="badge">🔥 7-Day Streak</div>
+    <div class="badge">🌟 Hackathon Winner</div>
+    <div class="badge">💡 Idea Contributor</div>
+  </section>
+
+  <section id="community" class="container">
+    <h2>🤝 Join Our Community</h2>
+    <p>Connect with peers, share ideas, and collaborate on projects.</p>
+    <a href="https://discord.gg/your-link" target="_blank">Join Discord</a>
+  </section>
+
+  <section id="feedback" class="container">
+    <h2>💬 Feedback</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
