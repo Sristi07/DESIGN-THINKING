@@ -1,0 +1,13 @@
+<input id="voiceSearch" type="text" placeholder="🎤 Speak or Type..." />
+<button onclick="startVoice()">Start Voice Search</button>
+
+<script>
+function startVoice() {
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognition.lang = "en-IN";
+  recognition.onresult = function(event) {
+    document.getElementById("voiceSearch").value = event.results[0][0].transcript;
+  };
+  recognition.start();
+}
+</script>
